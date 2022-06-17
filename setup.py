@@ -32,18 +32,15 @@ def read_requirements(file: str) -> list[str]:
 
 
 setup_info = dict(
-    name="template-python-project",
-    version="0.40.0",
+    name="parsealot",
+    version="0.0.1",
     author="Leah Lackner",
     author_email="leah.lackner+github@gmail.com",
-    url="https://github.com/leahevy/template-python-project",
+    url="https://github.com/leahevy/parsealot",
     project_urls={
-        "Documentation": "https://leahevy.github.io/"
-        "template-python-project",
-        "Source": "https://github.com/leahevy/" "template-python-project",
-        "Tracker": "https://github.com/leahevy/"
-        "template-python-project"
-        "/issues",
+        "Documentation": "https://leahevy.github.io/" "parsealot",
+        "Source": "https://github.com/leahevy/" "parsealot",
+        "Tracker": "https://github.com/leahevy/" "parsealot" "/issues",
     },
     description="A Python project template.",
     long_description=read_file("README.md"),
@@ -63,9 +60,7 @@ setup_info = dict(
     ],
     zip_safe=True,
     entry_points={
-        "console_scripts": [
-            "template-python-project=template_python_project.cli:main"
-        ],
+        "console_scripts": ["parsealot=parsealot.cli:main"],
     },
     package_dir={"": "."},
     packages=find_packages(where="."),
